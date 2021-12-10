@@ -135,18 +135,18 @@ export default function Page2(props) {
              )
              :(<View></View>)}
              
-            <ImageBackground source={require('../../assets/img/fondo.jpg')} style={{position: "absolute", zIndex: 1, width: "100%", height: "100%"}}></ImageBackground>
+            <ImageBackground source={require('../../assets/img/fondo.jpg')} style={{position: "absolute", zIndex: 1, width: "100%", height: "100%", opacity:0.3}}></ImageBackground>
              <View style={{flex: 1, justifyContent: "center", alignItems:"center", position: "absolute", zIndex: 100}}>
              <ImageBackground source={ !props.items ? require('../../assets/img/me.jpg' ): {uri: props.items}}  style={{position: "absolute", zIndex: 1, width: "100%", height: "100%"}}  style={{...stylesh.imageMe}}  imageStyle={{ borderRadius: 50}}></ImageBackground>
                <Text style={{marginTop: 30, fontSize: 24, color:"#030303", fontWeight: "bold"}}>Email: {props.email}</Text>
-               <Text style={{fontSize: 19, marginTop: 10, color:"#030303",fontWeight: "bold",textAlign:"center"}}>Universidad Tecnológica de Aguascalientes</Text>
-               <Text style={{fontSize: 27, marginTop: 10, fontWeight: "bold", color: "#1D8A59"}}>10 A</Text>
+               <Text style={{fontSize: 19, marginTop: 10, color:"#45423f",fontWeight: "bold",textAlign:"center"}}>Universidad Tecnológica de Aguascalientes</Text>
+               <Text style={{fontSize: 27, marginTop: 10, fontWeight: "bold", color: "black"}}>10 A</Text>
              </View>
-             <TouchableOpacity onPress={alarta} style={{backgroundColor: "#157B33", borderRadius: 30, width: 230, height: 40, alignItems: "center", marginTop: 505, zIndex: 400, position: "relative"}}><Text style={{fontSize: 30, color:"#FEFEFE"}}>Subir foto</Text></TouchableOpacity>
-             <TouchableOpacity onPress={handleSignOut} style={{backgroundColor: "#157B33", borderRadius: 30, width: 230, height: 25, alignItems: "center", marginTop: 10, zIndex: 700, position: "relative"}}><Text style={{fontSize: 18, color:"#FEFEFE"}}>Cerrar Sesion</Text></TouchableOpacity>
+             <TouchableOpacity onPress={alarta} style={{backgroundColor: "#5bc2ed", borderRadius: 30, width: 230, height: 33, alignItems: "center", marginTop: 510, zIndex: 400, position: "relative"}}><Text style={{fontSize: 25, color:"#FEFEFE"}}>Subir foto</Text></TouchableOpacity>
+             <TouchableOpacity onPress={handleSignOut} style={{backgroundColor: "#5bc2ed", borderRadius: 30, width: 230, height: 25, alignItems: "center", marginTop: 10, zIndex: 700, position: "relative"}}><Text style={{fontSize: 18, color:"#FEFEFE"}}>Cerrar Sesion</Text></TouchableOpacity>
            </View>
            {state?(
-              <View style={{position:'absolute',zIndex:100, width:"40%", height:"10%", backgroundColor: "#FFBF00", opacity: 0.9, borderRadius:20, textAlign:"center"}}>
+              <View style={{position:'absolute',zIndex:100, width:"40%", height:"10%", backgroundColor: "#f7be15", opacity: 0.9, borderRadius:20, textAlign:"center"}}>
               <TouchableOpacity onPress={Gallery} style={{position:'absolute', alignItems: "center",left: 30, top:12}}><Ionicons name='ios-images-outline' color='white' size={30}></Ionicons></TouchableOpacity>
               <TouchableOpacity onPress={Camera} style={{position:'absolute', right: 30, top:12}}><Ionicons name='ios-camera-outline' color='white' size={30}></Ionicons></TouchableOpacity>
               </View>

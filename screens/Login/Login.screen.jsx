@@ -169,7 +169,7 @@ const styles = StyleSheet.create({
     marginTop: 30,
   },
   button: {
-    backgroundColor: "#157B33",
+    backgroundColor: "#5bc2ed",
     width: "130%",
     padding: 15,
     borderRadius: 10,
@@ -179,7 +179,7 @@ const styles = StyleSheet.create({
   buttonOutline: {
     backgroundColor: "white",
     marginTop: 5,
-    borderColor: "#556b2f",
+    borderColor: "#5bc2ed",
     borderWidth: 2,
   },
   buttonText: {
@@ -188,7 +188,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   buttonOutlineText: {
-    color: "#556b2f",
+    color: "#f7be15",
     fontWeight: "700",
     fontSize: 16,
   },

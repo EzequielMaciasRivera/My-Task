@@ -68,12 +68,12 @@ setStat(false)
 
   return (
    <View>
-     <Text style={{color: "#000", fontSize: 20}}>Agregar nueva tarea:</Text>
+     <Text style={{color: "#ea495b", fontSize: 23, marginLeft:"5%", marginTop:"3%"}}>Agregar nueva tarea:</Text>
      <TextInput onChangeText={text => setText(text)}
-        defaultValue={text} style={{width: "70%", height: 30, marginLeft:15,backgroundColor: "#fff", marginTop: "5%"}}>
+        defaultValue={text} style={{width: "70%", height: 30, marginLeft:15,backgroundColor: "#fff", marginTop: "2%"}}>
      </TextInput>
-     <TouchableOpacity style={{position: "absolute", borderRadius:50,backgroundColor: "#1D8A59", width: "20%", height: 25, marginTop: 48, right: 10, zIndex:90}} onPress={writeUserData}>
-        <Ionicons name="md-save-outline" size={20} style={{position:'relative',fontSize: 20,color:'white',textAlign:'center'}}></Ionicons>
+     <TouchableOpacity style={{position: "absolute", borderRadius:50,backgroundColor: "#5bc2ed", width: "20%", height: 25, marginTop: 48, right: 10, zIndex:90}} onPress={writeUserData}>
+        <Ionicons name="md-save-outline" size={20} style={{position:'relative',fontSize: 20,color:'black',textAlign:'center', marginTop:"2%"}}></Ionicons>
      </TouchableOpacity>
 
  <FlatList
@@ -84,15 +84,15 @@ setStat(false)
 
       
      
-         <View style={item.status ? {flex:1, flexDirection: 'row', backgroundColor: "#FFBF00", margin: 10, borderRadius: 4}: {flex:1, flexDirection: 'row', backgroundColor: "green", margin: 10, borderRadius: 4}}>
+         <View style={item.status ? {flex:1, flexDirection: 'row', backgroundColor: "#daceb6", margin: 10, borderRadius: 4}: {flex:1, flexDirection: 'row', backgroundColor: "#f7be15", margin: 10, borderRadius: 4}}>
  
            {/* <Text style={stylesh.textView2}>Tarea:</Text> */}
            <Text onPress={SetItem.bind(this, item)} style={stylesh.textView} >{item.task}</Text>
            <TouchableOpacity style={stylesh.completed} onPress={doneTask.bind(this, item)}>
-              <Ionicons name="md-medal-outline" size={20} style={{position:'relative',fontSize:20,color:'white',padding:12,textAlign:'center'}}></Ionicons>
+              <Ionicons name="md-medal-outline" size={20} style={{position:'relative',fontSize:20,color:'#4c4745',padding:12,textAlign:'center'}}></Ionicons>
            </TouchableOpacity>
            <TouchableOpacity style={stylesh.borrar} onPress={deleteData.bind(this, item.task)}>
-              <Ionicons name="trash-outline" size={20} style={{position:'relative',fontSize:20,color:'white',padding:12,textAlign:'center'}}></Ionicons>
+              <Ionicons name="trash-outline" size={20} style={{position:'relative',fontSize:20,color:'#4c4745',padding:12,textAlign:'center'}}></Ionicons>
            </TouchableOpacity>
          </View>
      
@@ -261,7 +261,7 @@ const stylesh = StyleSheet.create({
       textAlignVertical:'center',
       padding:10,
       color: '#000',
-      fontSize: 22
+      fontSize: 17.2,
    
   },
   textView2: {
@@ -284,7 +284,7 @@ completed:{
   height: "100%",
   position: "absolute",
   right: "2%",
-  /* backgroundColor: "green" */
+  /* backgroundColor: "#00875e" */
 },
   imageViewFin: {
    
