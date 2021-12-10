@@ -143,7 +143,10 @@ export default function Page2(props) {
                <Text style={{fontSize: 27, marginTop: 10, fontWeight: "bold", color: "black"}}>10 A</Text>
              </View>
              <TouchableOpacity onPress={alarta} style={{backgroundColor: "#5bc2ed", borderRadius: 30, width: 230, height: 33, alignItems: "center", marginTop: 510, zIndex: 400, position: "relative"}}><Text style={{fontSize: 25, color:"#FEFEFE"}}>Subir foto</Text></TouchableOpacity>
-             <TouchableOpacity onPress={handleSignOut} style={{backgroundColor: "#5bc2ed", borderRadius: 30, width: 230, height: 25, alignItems: "center", marginTop: 10, zIndex: 700, position: "relative"}}><Text style={{fontSize: 18, color:"#FEFEFE"}}>Cerrar Sesion</Text></TouchableOpacity>
+             <TouchableOpacity onPress={handleSignOut} style={{backgroundColor: "#5bc2ed", borderRadius: 30, width: 230, height: 30, alignItems: "center", marginTop: 10, zIndex: 700, position: "relative"}}>
+               <Text style={{fontSize: 22, color:"#FEFEFE"}}>
+               <Ionicons name='ios-log-out-outline' color='white' size={21}></Ionicons>
+                  &nbsp; Cerrar Sesion</Text></TouchableOpacity>
            </View>
            {state?(
               <View style={{position:'absolute',zIndex:100, width:"40%", height:"10%", backgroundColor: "#f7be15", opacity: 0.9, borderRadius:20, textAlign:"center"}}>

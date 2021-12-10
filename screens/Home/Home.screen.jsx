@@ -92,9 +92,9 @@ const HomePage = ({ route }) => {
                 ? 'camera-outline'
                 : 'camera-outline';
             } else if (route.name === 'Lista') {
-              iconName = focused ? 'ios-list' : 'ios-list';
+              iconName = focused ? 'ios-list-outline' : 'ios-list-outline';
             }else if (route.name === 'Perfil') {
-              iconName = focused ? 'information-circle' : 'information-circle';
+              iconName = focused ? 'ios-person-outline' : 'ios-person-outline';
             }
 
             // You can return any component that you like here!

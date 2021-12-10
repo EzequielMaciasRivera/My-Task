@@ -36,7 +36,7 @@ function writeUserData() {
     status: true
    
   });
-  /* console.log("dsad") */
+  setText('');
 }
 
 function deleteData(tarea) {
@@ -70,7 +70,7 @@ setStat(false)
    <View>
      <Text style={{color: "#ea495b", fontSize: 23, marginLeft:"5%", marginTop:"3%"}}>Agregar nueva tarea:</Text>
      <TextInput onChangeText={text => setText(text)}
-        defaultValue={text} style={{width: "70%", height: 30, marginLeft:15,backgroundColor: "#fff", marginTop: "2%"}}>
+        defaultValue={text} style={{width: "70%", height: 30, marginLeft:15,backgroundColor: "#fff", marginTop: "2%", borderRadius: 10 }}>
      </TextInput>
      <TouchableOpacity style={{position: "absolute", borderRadius:50,backgroundColor: "#5bc2ed", width: "20%", height: 25, marginTop: 48, right: 10, zIndex:90}} onPress={writeUserData}>
         <Ionicons name="md-save-outline" size={20} style={{position:'relative',fontSize: 20,color:'black',textAlign:'center', marginTop:"2%"}}></Ionicons>
@@ -89,7 +89,7 @@ setStat(false)
            {/* <Text style={stylesh.textView2}>Tarea:</Text> */}
            <Text onPress={SetItem.bind(this, item)} style={stylesh.textView} >{item.task}</Text>
            <TouchableOpacity style={stylesh.completed} onPress={doneTask.bind(this, item)}>
-              <Ionicons name="md-medal-outline" size={20} style={{position:'relative',fontSize:20,color:'#4c4745',padding:12,textAlign:'center'}}></Ionicons>
+              <Ionicons name="ios-ribbon-outline" size={20} style={{position:'relative',fontSize:20,color:'#4c4745',padding:12,textAlign:'center'}}></Ionicons>
            </TouchableOpacity>
            <TouchableOpacity style={stylesh.borrar} onPress={deleteData.bind(this, item.task)}>
               <Ionicons name="trash-outline" size={20} style={{position:'relative',fontSize:20,color:'#4c4745',padding:12,textAlign:'center'}}></Ionicons>
@@ -257,33 +257,40 @@ const stylesh = StyleSheet.create({
    
   textView: {
    
-      width:'50%', 
+      width:'100%', 
       textAlignVertical:'center',
-      padding:10,
+      paddingTop: 35,
+      paddingLeft: 10,
+      paddingBottom: 10,
+      paddingRight:10,
       color: '#000',
       fontSize: 17.2,
    
   },
   textView2: {
    
-    width:'20%', 
+    width:'100%', 
     textAlignVertical:'center',
-    padding:10,
+    paddingTop: 35,
+    paddingLeft: 10,
+    paddingBottom: 10,
+    paddingRight:10,
     color: '#000',
-    fontSize: 22
+    fontSize: 17.2,
+ 
   },
 borrar:{
   width: 60,
   height: "100%",
   position: "absolute",
-  right: "15%",
+  right: "14%",
   /* backgroundColor: "#5e2129" */
 },
 completed:{
   width: 60,
   height: "100%",
   position: "absolute",
-  right: "2%",
+  right: 0,
   /* backgroundColor: "#00875e" */
 },
   imageViewFin: {
